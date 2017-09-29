@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <!-- Panels Overlay -->
+    <div class="panel-overlay"></div>
+ 
+    <!-- Left Panel with Reveal effect -->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left Panel content here</p>
+        <!-- Click on link with "close-panel" class will close panel -->
+        <p><a href="#" class="close-panel">Close me</a></p>
+        <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
+      </div>
+    </div>
     <!-- Views -->
     <div class="views">
       <!-- Your main view, should have "view-main" class -->
@@ -29,6 +41,9 @@
             <!-- Top Navbar. In Material theme it should be inside of the page-->
             <div class="navbar">
               <div class="navbar-inner">
+	        <div class="left">
+                  <a href="#" data-panel="left" class="open-panel">Menu</a>
+                </div>
                 <div class="center">Awesome App</div>
               </div>
             </div>
