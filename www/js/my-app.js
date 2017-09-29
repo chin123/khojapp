@@ -30,4 +30,10 @@ $$(document).on('pageInit', function (e) {
         }
         novisit++;
     }
+    if (page.name == 'searchkhoj') {
+        var mySearchbar = myApp.searchbar('.searchbar', {
+            searchList: '.list-block-search',
+            searchIn: '.item-title'
+        });   
+    }
 })
