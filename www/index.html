@@ -30,7 +30,15 @@
       max-width: 100%;
       width: auto;
     }
-    .popup-overlay{z-index: 111 !important;}
+    .popup-overlay{
+      z-index: 111 !important;
+    }
+    .demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   </style>
 </head>
 
@@ -74,7 +82,20 @@
 
           <!-- Scrollable page content -->
           <div class="page-content">
-            <p>Welcome!</p>
+            <div class="content-block-title">ALL EXHIBITS</div>
+            
+           <div class="card demo-card-header-pic">
+             <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)" valign="bottom" class="card-header color-white no-border">Aristotle</div>
+             <div class="card-content">
+               <div class="card-content-inner">
+                 <p class="color-gray">Science</p>
+                 <p>Quisque eget vestibulum nulla...</p>
+               </div>
+             </div>
+             <div class="card-footer">
+               <div data-popup=".popup-about" class="open-popup">READ MORE</div>
+             </div>
+           </div>
           </div>
         </div>
 
