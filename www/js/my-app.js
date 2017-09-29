@@ -1,5 +1,7 @@
 // Initialize app
-var myApp = new Framework7();
+var myApp = new Framework7({
+    swipePanel: 'left'
+});
 var novisit = 0;
 
 // If we need to use custom DOM library, let's save it to $$ variable:
