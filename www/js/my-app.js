@@ -30,9 +30,10 @@ $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
 
-    if (page.name === 'about') {
+    if (page.name === 'schoolmap') {
+	$('img[usemap]').rwdImageMaps();
         // Following code will be executed for page with data-page attribute equal to "about"
-        myApp.alert('Here comes About page');
+        myApp.alert('Here comes schoolmap page');
     }
 })
 

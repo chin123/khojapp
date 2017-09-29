@@ -1,69 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- Color theme for statusbar -->
-    <meta name="theme-color" content="#2196f3">
-    <!-- Your app title -->
-    <title>My App</title>
-    <!-- Path to Framework7 Library CSS, Material Theme -->
-    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
-    <!-- Path to Framework7 color related styles, Material Theme -->
-    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <!-- Panels Overlay -->
-    <div class="panel-overlay"></div>
- 
-    <!-- Left Panel with Reveal effect -->
-    <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <p>Menu</p>
-        <!-- Click on link with "close-panel" class will close panel -->
-        <p><a href="map.html" class="close-panel">Map of the school</a></p>
-        <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
-      </div>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=160dpi, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#2196f3">
+  <!-- Your app title -->
+  <title>My App</title>
+  <!-- Path to Framework7 Library CSS, Material Theme -->
+  <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+  <!-- Path to Framework7 color related styles, Material Theme -->
+  <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    div {
+      width: 100%;
+    }
+
+    img[usemap] {
+      border: none;
+      height: auto;
+      max-width: 100%;
+      width: auto;
+    }
+    .popup-overlay{z-index: 111 !important;}
+  </style>
+</head>
+
+<body>
+  <!-- Panels Overlay -->
+  <div class="panel-overlay"></div>
+  <div class="popup-overlay"></div>
+
+  <!-- Left Panel with Reveal effect -->
+  <div class="panel panel-left panel-reveal">
+    <div class="content-block">
+      <p>Menu</p>
+      <!-- Click on link with "close-panel" class will close panel -->
+      <p><a href="index.html" class="close-panel">Home</a></p>
+      <p><a href="map.html" class="close-panel">Map of the school</a></p>
+      <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
     </div>
-    <!-- Views -->
-    <div class="views">
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages ">
-          <!-- Page, "data-page" contains page name -->
-            <div class="navbar">
-              <div class="navbar-inner">
-	        <div class="left">
-                  <a href="#" data-panel="left" class="link open-panel"><i class="material-icons">menu</i></a>
-                </div>
-                <div class="center">Khoj</div>
-	        <div class="right">
-                  <a href="#" data-panel="right" class="link open-panel"></a>
-                </div>
-              </div>
+  </div>
+  <!-- Views -->
+  <div class="views">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages ">
+        <!-- Page, "data-page" contains page name -->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" data-panel="left" class="link open-panel"><i class="material-icons">menu</i></a>
             </div>
-          <div data-page="index" class="page navbar-fixed">
- 
-            <!-- Top Navbar. In Material theme it should be inside of the page-->
- 
- 
-            <!-- Scrollable page content -->
-            <div class="page-content">
-              <p>Welcome!</p>
+            <div class="center">Khoj</div>
+            <div class="right">
+              <a href="#" data-panel="right" class="link open-panel"></a>
             </div>
           </div>
         </div>
+        <div data-page="index" class="page navbar-fixed">
+
+          <!-- Top Navbar. In Material theme it should be inside of the page-->
+
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <p>Welcome!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="popup popup-about">
+      <div class="content-block">
+        <p>About</p>
+        <p><a href="#" class="close-popup">Close popup</a></p>
+        <p>Lorem ipsum dolor ...</p>
       </div>
     </div>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+
     <script type="text/javascript" src="js/my-app.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+
+    <script>
+      function hooray() {
+        alert("hooray");
+      }
+    </script>
 </body>
 
 </html>
