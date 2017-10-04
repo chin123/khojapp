@@ -34,6 +34,7 @@ $$(document).on('pageInit', function (e) {
         var mySearchbar = myApp.searchbar('.searchbar', {
             searchList: '.list-block-search',
             searchIn: '.item-title'
-        });   
+        }); 
+          
     }
 })
