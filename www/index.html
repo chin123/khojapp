@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
   <!-- Path to Framework7 color related styles, Material Theme -->
   <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/material-icons.css" rel="stylesheet">
   <!-- Path to your custom app styles-->
   <link rel="stylesheet" href="css/styles.css">
   <style>
@@ -38,12 +38,17 @@
     .demo-card-header-pic .card-header {
       height: 40vw;
       background-position: center;
-      background-size: initial;
+      background-size: contain;
       background-repeat: no-repeat;
       padding: 10px;
     }
 
     h4[class*="col-"] {
+      text-align: center;
+      padding: 5px;
+    }
+
+    #khoj-countdown {
       text-align: center;
       padding: 5px;
     }
@@ -94,224 +99,431 @@
 
           <!-- Scrollable page content -->
           <div class="page-content">
-            <div class="content-block-title">ALL EXHIBITS</div>
+            
+              <div class="content-block-title">WELCOME</div>
+              <div class="col-100 card">Welcome to the Official App for Khoj, the NPS Koramangala Science Fair!
+                The App contains a list of all events and exhibits in Khoj, accessable through the search function as well.
+                We hope you have a good time!
 
+              </div>
+
+            <div class="content-block-title">COUNTDOWN TO KHOJ</div>
+            <div id="khoj-countdown" class="card col-100"></div>
+            
+            <div class="content-block-title">EXPLORE</div>
             <div class="card demo-card-header-pic">
-              <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                valign="bottom" class="card-header color-white no-border">6A</div>
+              <div style="background-image:url(Physics.png)"
+                valign="bottom" class="card-header color-white no-border" >6A</div>
               <div class="card-content">
                 <div class="card-content-inner">
                   <p class="color-gray">The Force Awakens</p>
                   <p>Topic: Force</p>
                 </div>
               </div>
+              <div class="card-footer">
+                <div data-popup=".popup-6a" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">6B</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Gastronomy</p>
-                    <p>Topic: Biology in the kitchen</p>
-                  </div>
+              <div style="background-image:url(Biology.png)"
+                valign="bottom" class="card-header color-white no-border" >6B</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Gastronomy</p>
+                  <p>Topic: Biology in the kitchen</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-6b" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">6C</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Naturalis Elementa</p>
-                    <p>Topic: Elements of Nature</p>
-                  </div>
+              <div style="background-image:url(Biology.png)"
+                valign="bottom" class="card-header color-white no-border" >6C</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Naturalis Elementa</p>
+                  <p>Topic: Elements of Nature</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-6c" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">7A</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Alchemy</p>
-                    <p>Topic: Household Chemistry</p>
-                  </div>
+              <div style="background-image:url(Chemistry.png)"
+                valign="bottom" class="card-header color-white no-border" >7A</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Alchemy</p>
+                  <p>Topic: Household Chemistry</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-7a" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">7B</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Salty Family</p>
-                    <p>Topic: Neutralisation</p>
-                  </div>
+              <div style="background-image:url(Chemistry.png)"
+                valign="bottom" class="card-header color-white no-border" >7B</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Salty Family</p>
+                  <p>Topic: Neutralisation</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-7b" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">7C</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Breakdown Voltage</p>
-                    <p>Topic: Electricity</p>
-                  </div>
+              <div style="background-image:url(Physics.png)"
+                valign="bottom" class="card-header color-white no-border" >7C</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Breakdown Voltage</p>
+                  <p>Topic: Electricity</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-7c" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">8A,B and C</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Heaven of freedom</p>
-                    <p>Topic: India's progress after independence</p>
-                  </div>
+              <div style="background-image:url(Social-Science.png)"
+                valign="bottom" class="card-header color-white no-border" >8A,B and C</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Heaven of freedom</p>
+                  <p>Topic: India's progress after independence</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-audi" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">9A</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Faraday's Cage</p>
-                    <p>Topic: Electromagnetism</p>
-                  </div>
+              <div style="background-image:url(Physics.png)"
+                valign="bottom" class="card-header color-white no-border" >9A</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Faraday's Cage</p>
+                  <p>Topic: Electromagnetism</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-9a" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">9B</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Doppler Effect</p>
-                    <p>Topic: Light and Sound</p>
-                  </div>
+              <div style="background-image:url(Physics.png)"
+                valign="bottom" class="card-header color-white no-border" >9B</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Doppler Effect</p>
+                  <p>Topic: Light and Sound</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-9b" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">9C</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Colourallure</p>
-                    <p>Topic: Colours</p>
-                  </div>
+              <div style="background-image:url(Physics.png)"
+                valign="bottom" class="card-header color-white no-border" >9C</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Colourallure</p>
+                  <p>Topic: Colours</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-9c" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">10A</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Equilibrium Constant</p>
-                    <p>Topic: Types of Chemical Reactions</p>
-                  </div>
+              <div style="background-image:url(Chemistry.png)"
+                valign="bottom" class="card-header color-white no-border" >10A</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Equilibrium Constant</p>
+                  <p>Topic: Types of Chemical Reactions</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-10a" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">10B</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Fight or Flight</p>
-                    <p>Topic: Offence and Defence mechanism in animals.</p>
-                  </div>
+              <div style="background-image:url(Biology.png)"
+                valign="bottom" class="card-header color-white no-border" >10B</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Fight or Flight</p>
+                  <p>Topic: Offence and Defence mechanism in animals.</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-10b" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">10C</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">E=mc^2</p>
-                    <p>Topic: Energy</p>
-                  </div>
+              <div style="background-image:url(Physics.png)"
+                valign="bottom" class="card-header color-white no-border" >10C</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">E=mc^2</p>
+                  <p>Topic: Energy</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-10c" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">11A</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">2^∞</p>
-                    <p>Topic: Mathematics in Everyday life</p>
-                  </div>
+              <div style="background-image:url(Math.png)"
+                valign="bottom" class="card-header color-white no-border" >11A</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">2^∞</p>
+                  <p>Topic: Mathematics in Everyday life</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-11a" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">11B</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Alohomora</p>
-                    <p>Topic: Viruses and Vaccines</p>
-                  </div>
+              <div style="background-image:url(Biology.png)"
+                valign="bottom" class="card-header color-white no-border" >11B</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Alohomora</p>
+                  <p>Topic: Viruses and Vaccines</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-11b" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">Computer Lab</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Turing Machine</p>
-                    <p>Topic: Computer Graphics, Animation, Robotics, Algorithms, Video Games</p>
-                  </div>
+              <div style="background-image:url(Comp.png)"
+                valign="bottom" class="card-header color-white no-border" >Computer Lab</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Turing Machine</p>
+                  <p>Topic: Computer Graphics, Animation, Robotics, Algorithms, Video Games</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-complab" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">Art Room/4C</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Chamber of Secrets (Show)</p>
-                    <p>Topic: Biological Warfare</p>
-                  </div>
+              <div style="background-image:url(Biology.png)"
+                valign="bottom" class="card-header color-white no-border" >Art Room/4C</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Chamber of Secrets (Show)</p>
+                  <p>Topic: Biological Warfare</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-artroom" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">Green Room</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Hall of Mjolnir (Show) </p>
-                    <p>Topic: Electromagnetic Induction</p>
-                  </div>
+              <div style="background-image:url(Physics.png)"
+                valign="bottom" class="card-header color-white no-border" >Green Room</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Hall of Mjolnir (Show) </p>
+                  <p>Topic: Electromagnetic Induction</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-greenroom" class="open-popup">READ MORE</div>
+              </div>
             </div>
             <div class="card demo-card-header-pic">
-                <div style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/448px-Aristotle_Altemps_Inv8575.jpg)"
-                  valign="bottom" class="card-header color-white no-border">AV Room</div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p class="color-gray">Dark Arts (Show)</p>
-                    <p>Topic: Chemical Reactions</p>
-                  </div>
+              <div style="background-image:url(Chemistry.png)"
+                valign="bottom" class="card-header color-white no-border" >AV Room</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p class="color-gray">Dark Arts (Show)</p>
+                  <p>Topic: Chemical Reactions</p>
                 </div>
+              </div>
+              <div class="card-footer">
+                <div data-popup=".popup-avroom" class="open-popup">READ MORE</div>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
     </div>
+  </div>
+  <div class="popup popup-artroom">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">A murder - mystery show, also involving forensics and psychology, with a nail - biting finale!</p>
     </div>
-    <div class="popup popup-about">
+  </div>
+  <div class="popup popup-avroom">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">A show with spells. 2 people get transported into another realm. Experience their journey as they fight through to return to their present.</p>
+    </div>
+  </div>
+  <div class="popup popup-complab">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Dive into a vast ocean of computer science through interactive games, animations, robotics and more!</p>
+    </div>
+  </div>
+  <div class="popup popup-10a">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Explore the fast-paced and incredibly complex topic of chemical reactions.</p>
+    </div>
+  </div>
+  <div class="popup popup-11b">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Experience the wonders of math in every sphere of life.</p>
+    </div>
+  </div>
+  <div class="popup popup-10c">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Exhibits - Understand the working of a radio or tesla - coil, and phenomena related to energy.</p>
+    </div>
+  </div>
+  <div class="popup popup-8c">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">complab</p>
+    </div>
+  </div>
+  <div class="popup popup-9a">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Electromagnetic Induction - Discover the common link between electricity and magnetism.</p>
+    </div>
+  </div>
+  <div class="popup popup-9b">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Light and Sound - Why do we see illusions?</p>
+    </div>
+  </div>
+  <div class="popup popup-9c">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Have you ever wondered why you see colours the way you do? Learn more about colors at 9C.</p>
+    </div>
+  </div>
+  <div class="popup popup-7c">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Exhibits on electricy, with a jingle!</p>
+    </div>
+  </div>
+  <div class="popup popup-7b">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Venture into the world of acids, bases, and salts.</p>
+    </div>
+  </div>
+  <div class="popup popup-greenroom">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Sit back as we take you through the era of technological advancements of fictional Norse kingdom, culminating in small challenge {features Thor!}!</p>
+    </div>
+  </div>
+  <div class="popup popup-audi">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Changes brought about by Indian Independence - a time lapse of development from the moment of true happiness to the present!</p>
+    </div>
+  </div>
+  <div class="popup popup-7a">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Exhibits - Chemicals used in your daily life, which you may not even know about!</p>
+    </div>
+  </div>
+  <div class="popup popup-6a">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Exhibits on different types of forces.</p>
+    </div>
+  </div>
+  <div class="popup popup-6b">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Explore how an eco-friendly kitchen works!</p>
+    </div>
+  </div>
+  <div class="popup popup-6c">
+    <div class="content-block">
+      <p class="color-white">About</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p class="color-white">Explore the world through the elements of nature</p>
+    </div>
+  </div>
+  <div class="popup popup-10b">
+      <div class="content-block">
+        <p class="color-white">About</p>
+        <p><a href="#" class="close-popup">Close popup</a></p>
+        <p class="color-white">Fight or Flight - Eat or be eaten? Kill or be killed? Explore the fascinating concepts of self defense among animals.</p>
+      </div>
+    </div>
+    <div class="popup popup-11a">
         <div class="content-block">
           <p class="color-white">About</p>
           <p><a href="#" class="close-popup">Close popup</a></p>
-          <p class="color-white">Lorem ipsum dolor ...</p>
+          <p class="color-white">Explore the seemingly mysterious, complex but beautiful field of mathematics, and its usage in everyday life.</p>
         </div>
-    </div>
-    
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+      </div>
+      <div class="popup popup-11b">
+          <div class="content-block">
+            <p class="color-white">About</p>
+            <p><a href="#" class="close-popup">Close popup</a></p>
+            <p class="color-white">Learn more about the vital and life saving uses of vaccines, and the lethal threat of viruses, and how they are interlinked.</p>
+          </div>
+        </div>
 
-    <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 
-    <script>
-      function hooray() {
-        alert("hooray");
-      }
-    </script>
+  <script>
+    $('#khoj-countdown').countdown('2017/10/11', function(event) {
+        $('#khoj-countdown').html("<h4>" + event.strftime('%d days %H hours %M minutes %S seconds') + "</h4>");
+    });
+  </script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
 </body>
 
 </html>
