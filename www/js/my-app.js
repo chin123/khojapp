@@ -26,7 +26,7 @@ $$(document).on('pageInit', function (e) {
 	    $('img[usemap]').rwdImageMaps();
         // Following code will be executed for page with data-page attribute equal to "about"
         if (novisit == 0) {
-            myApp.alert('You can touch a room to see the exhibits present!');
+            myApp.alert('You can touch a room to see the exhibits present!', 'Khoj');
         }
         novisit++;
     }
@@ -35,6 +35,12 @@ $$(document).on('pageInit', function (e) {
             searchList: '.list-block-search',
             searchIn: '.item-title'
         }); 
+          
+    }
+    if (page.name == 'index') {
+        $('#khoj-countdown').countdown('2017/10/13', function(event) {
+            $('#khoj-countdown').html("<h4>" + event.strftime('%d days %H hours %M minutes %S seconds') + "</h4>");
+        });
           
     }
 })
