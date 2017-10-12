@@ -1,6 +1,7 @@
 // Initialize app
 var myApp = new Framework7({
-    swipePanel: 'left'
+    swipePanel: 'left',
+    pushState : true
 });
 var novisit = 0;
 
